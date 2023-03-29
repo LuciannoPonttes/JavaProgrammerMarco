@@ -1,0 +1,10 @@
+Passo 1 
+	Criar um documento de texto.
+Passo 2
+	Inserir o codigo java no documento de texto criado.
+Passo 3 
+	Salvar o documento de texto no formato ".java".
+Passo 4 
+	Executar o comando javac <nomeArquivo.java> Para compilar o codigo (ou seja criar o bytecode).
+Passo 5 
+	Executar o comando java <nomeArquivo> para executar o programa.
