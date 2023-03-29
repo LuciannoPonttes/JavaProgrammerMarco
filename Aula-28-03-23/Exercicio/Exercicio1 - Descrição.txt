@@ -1,0 +1,4 @@
+Crie e execute um programa que os seguintes dados do Usuario:
+	Nome
+	Idade
+	Endereço
