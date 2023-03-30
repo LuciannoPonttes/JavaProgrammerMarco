@@ -1,0 +1,15 @@
+Crie um programa JAVA com as seguintes caractericas:
+	Objetos(Entidade):
+		Profissional(Classe Pai)
+			Nome
+			Cpf
+	
+		Programador(Classe filho)
+			Linguagem
+		
+		AdmBanco(Classe filho)	
+			TipoDeBancoDeDados
+
+Receba os dados de um programador e um dba e logo em seguida aprensente todos os dados no console.
+	
+		
