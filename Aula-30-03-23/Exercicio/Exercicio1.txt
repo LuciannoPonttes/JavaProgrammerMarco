@@ -1,0 +1,5 @@
+Crie um projeto java no eclipse e faça as seguintes implementações:
+
+	Crie o mesmo programa da aula do dia 30 no eclipse;
+
+	OBS: Pratique o ato de depurar o seu codigo.
