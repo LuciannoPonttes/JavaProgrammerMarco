@@ -1,0 +1,27 @@
+O sistema precisa calcular e apresentar o salario dos professores de uma escola, todo professor possui os seguintes atributos:
+	
+	Nome
+	Cpf
+	Salario Bruto
+	Salario Liquido 
+	qtdHorasTrabalhadas
+	valorHoratrabalhada
+
+	A escola possui 3 tipos de professores:
+	
+	Professor Senior:
+		Recebe 100 por hora trabalhada e paga 10% de imposto de renda.
+	Professor Pleno:
+		Recebe 80 por hora trabalhada e paga 7% de imposto de renda.
+
+	Professor Junior 
+		Recebe 60 por hora trabalhada e paga 5% de imposto de renda.
+
+Receba os dados dos professores e no final apresente o salario bruto e salario liquido de cada um.
+
+	OBS UTILIZE APENAS UM METODO PARA TODAS AS SITUAÇÕES
+
+
+	Para realizar divisão use o \ 
+
+		
