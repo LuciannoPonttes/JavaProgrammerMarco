@@ -24,4 +24,11 @@ Receba os dados dos professores e no final apresente o salario bruto e salario l
 
 	Para realizar divisão use o \ 
 
+
+
+	Desafio:
+
+
+		Caso o professor tenha trabalhado mais 500 horas ele ira receber um bonus de 25% sobre o salario bruto;
+
 		
