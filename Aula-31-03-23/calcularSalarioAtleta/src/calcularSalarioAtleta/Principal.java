@@ -64,6 +64,12 @@ public class Principal {
 	public static double calcularSalario(int qtdDesempenhoTemp, int qtdPartidaTemp, double multiplicador ) {
 		double salarioTemp = (qtdDesempenhoTemp + qtdPartidaTemp) * multiplicador;
 				
+		if(qtdPartidaTemp >= 15){
+			salarioTemp = salarioTemp + 15000;
+		
+		}
+		
+		
 		return salarioTemp;
 	}
 
