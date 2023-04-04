@@ -1,0 +1,4 @@
+Necessidade 1 :
+
+	Criar um programa Java que realize a soma de 2 numeros digitados
+	pelo usuario. 

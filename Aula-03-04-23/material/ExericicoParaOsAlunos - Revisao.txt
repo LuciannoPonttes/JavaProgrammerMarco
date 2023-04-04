@@ -1,0 +1,6 @@
+Necessidade:
+
+Crie um projeto Java para atender a seguinte necessidade:
+
+	Receba dois numeros do usuario, realize a multiplicação entre eles
+	e apresente o resultado.

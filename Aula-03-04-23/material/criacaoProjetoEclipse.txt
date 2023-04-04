@@ -1,0 +1,44 @@
+Pagina 18 da apostila.
+Criar projeto no eclipse (pensando como programador):
+
+	1 - Determinar em qual diretorio o projeto sera armazenado.
+	
+ 	2  - Abrir o Eclipse
+	
+	3 - Selecinar o item File, new e depois JavaProject
+
+	4 - Adicione o nome do projeto
+
+	5 - Selecione o local onde o projeto será armazenado(tem que fazer sentido).
+
+	6 - Verificar a necessidade. 
+	
+	7 - Criar o metodo Main (Criação do metodo Main) - Sem criação de pacote.
+		Botão direito na parte SRC, selecione new e logo em seguida em Class.
+		Classe sempre com letra maiuscula.
+		A classe precisa do metodo Main.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	OBS: A pastinha JRE contém as classes "nativas do java"
+	OBS: O codigo JAVA deve ser adicionado na pasta SRC
