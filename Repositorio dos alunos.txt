@@ -1,0 +1,10 @@
+Rodrigo:
+	https://github.com/RodrigoSantana-Dev/CursoJavaProgrammer
+Andrey: 
+	https://github.com/AndreyFarah/CursoJavaProgrammer
+Allan:
+ 	https://github.com/diasprogramacao/CursoJavaProgrammer
+Peterson:
+	https://github.com/Pterson/CursoJavaProgrammer
+Pedro Carbonaro
+	https://github.com/CarbonaroPedro1/CursoJavaProgrammer

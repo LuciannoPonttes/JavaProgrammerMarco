@@ -1,0 +1,15 @@
+Cadastro de Mamifero e Ave:
+
+	Animal
+		Nome
+		idade
+   
+	Mamifero
+		corDoPelo
+		o mamifero corre! ############# O metodo que vai informar	
+	
+		
+	Ave
+
+		corPena
+		a ave voa! ############# O metodo que vai informar
