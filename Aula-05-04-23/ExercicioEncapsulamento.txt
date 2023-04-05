@@ -1,0 +1,10 @@
+Cadastro de Pessoa:
+
+	Pessoa:
+	Nome
+	Cpf
+
+	Receba os dados do usuario e apresente os dados inseridos
+
+	
+	OBS: Utilize o encapsulamento
