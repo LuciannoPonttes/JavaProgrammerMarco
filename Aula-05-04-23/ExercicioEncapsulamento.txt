@@ -8,3 +8,5 @@ Cadastro de Pessoa:
 
 	
 	OBS: Utilize o encapsulamento
+
+	Depure o codigo para entender se não souber me chama

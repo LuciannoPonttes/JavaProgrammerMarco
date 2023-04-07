@@ -1,0 +1,15 @@
+Cadastro de produto:
+
+	Produto:
+		Codigo
+		modelo
+		
+
+	Celular
+		SistemaOP
+
+	Televisão
+		QualidadeImagem
+
+
+Receba o dados do produto e depois apresente o que foi digitado. 
