@@ -12,9 +12,9 @@ public class CadastroProdutoTela {
 	
 	public Celular cadastrarCelular(Celular celularParametro) {
 		
-		celularParametro.setCodigo("123");
-		celularParametro.setModelo("Redmi");
-		celularParametro.setSistemaOperacional("Android");
+		celularParametro.setCodigo(JOptionPane.showInputDialog("Digite o codigo: "));
+		celularParametro.setModelo(JOptionPane.showInputDialog("Digite o modelo: "));
+		celularParametro.setSistemaOperacional(JOptionPane.showInputDialog("Digite o SO: "));
 		
 		return celularParametro;
 		
@@ -32,9 +32,9 @@ public class CadastroProdutoTela {
 	
 	public Televisao cadastrarTelevisao(Televisao televisaoParametro) {
 		
-		televisaoParametro.setCodigo("124");
-		televisaoParametro.setModelo("Sony");
-		televisaoParametro.setQualidadeImagem("1920 X 1080");
+		televisaoParametro.setCodigo(JOptionPane.showInputDialog("Digite o codigo: "));
+		televisaoParametro.setModelo(JOptionPane.showInputDialog("Digite o modelo: "));
+		televisaoParametro.setQualidadeImagem(JOptionPane.showInputDialog("Digite a imagem: "));
 		
 		return televisaoParametro;
 		

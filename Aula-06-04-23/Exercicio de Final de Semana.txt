@@ -1,0 +1,33 @@
+Cadastro de Equipamento:
+
+		Equipamento:
+			 codigo
+			 marca
+			 preçoDeCompra
+			 preçoDeVenda
+			 lucro
+
+		Furadeira
+			tipoBroca
+		
+		Makita
+			tipoMakita
+
+Receba os dados do usuario através da interface grafica(JOptionPane) do java e logo em seguida apresente(JOptionPane) os dados cadastrados e o lucro obtido.
+
+
+Obrigatoriedades:
+
+	O lucro deve ser calcular dentro de uma classe de serviço
+	A utilização de herança
+	O cadastro e a apresentação devem ser realizados através de um classe especializada em interface grafica.
+	 
+
+
+
+
+
+
+			
+
+	
