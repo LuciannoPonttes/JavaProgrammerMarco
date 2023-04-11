@@ -1,7 +1,7 @@
 package principal;
 
-import entidades.Furadeira;
-import telas.ParteGrafica;
+
+import telas.ParteGrafica;// Importando o objeto
 
 public class Principal {
 
@@ -10,7 +10,9 @@ public class Principal {
 		
 		
 		// Inicializei a classe ParteGrafica
-		ParteGrafica paGrafica = new ParteGrafica();
+		ParteGrafica paGrafica = new ParteGrafica();// Construtor Vazio
+		
+		
 		//Chamar o metodo menu 
 		paGrafica.menu();
 		

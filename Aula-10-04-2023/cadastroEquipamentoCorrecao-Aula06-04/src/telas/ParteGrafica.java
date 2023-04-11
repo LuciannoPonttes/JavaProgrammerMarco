@@ -8,10 +8,11 @@ import servico.Calculos;
 
 public class ParteGrafica {
 	Calculos calc = new Calculos();
-	Furadeira furadeira = new Furadeira();
-	Makita makita = new Makita();
 	
-	public Furadeira cadastrarFuradeira() {
+	
+	public void cadastrarFuradeira(Furadeira furadeira) {
+		
+		
 		
 		// Recebe os dados do usuario e armazena nos atributos do objeto
 		furadeira.setCodigo(JOptionPane.showInputDialog("Digite o codigo: "));
@@ -23,10 +24,11 @@ public class ParteGrafica {
 		//Chama o metodo calcular lucro
 		furadeira.setLucro(calc.calcularLucro(furadeira.getPrecoDeVenda(), furadeira.getPrecoDeCompra()));
 		
-		return furadeira;
+		apresentarFuradeira(furadeira);
+		
+		
 		
 	}
-	
 	
 	public void apresentarFuradeira(Furadeira furadeiraParametro) {
 		JOptionPane.showMessageDialog(null, "O codigo da furadeira é: " + furadeiraParametro.getCodigo());
@@ -38,6 +40,7 @@ public class ParteGrafica {
 	}
 	
 	public Makita cadastrarMakita() {
+		Makita makita = new Makita();
 		
 		// Recebe os dados do usuario e armazena nos atributos do objeto
 		makita.setCodigo(JOptionPane.showInputDialog("Digite o codigo: "));
@@ -62,16 +65,15 @@ public class ParteGrafica {
 		JOptionPane.showMessageDialog(null, "O lucro da Makita é: " + makitaParametro.getLucro());
 	}
 	
-	
-	
-	
-
 	public void menu() {
 		int opcao = Integer.parseInt(JOptionPane.showInputDialog("Digite 1 para Furadeira e 2 para Makita:"));
 		
+		Furadeira furadeira = new Furadeira();
 		
 		if(opcao == 1) {
-			apresentarFuradeira(cadastrarFuradeira()); // Ele executa as atividades da Furadeira
+			 cadastrarFuradeira(furadeira);
+			
+			
 		}
 		
 		if(opcao == 2) {
