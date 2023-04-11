@@ -23,6 +23,10 @@ Obrigatoriedades:
 	O cadastro e a apresentação devem ser realizados através de um classe especializada em interface grafica.
 	 
 
+	Desafio:
+
+	Perguntar ao usuario qual equipamento ele deseja cadastrar
+
 
 
 
