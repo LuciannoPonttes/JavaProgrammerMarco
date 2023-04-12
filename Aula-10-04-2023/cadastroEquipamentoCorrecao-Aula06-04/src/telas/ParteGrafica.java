@@ -66,21 +66,73 @@ public class ParteGrafica {
 	}
 	
 	public void menu() {
-		int opcao = Integer.parseInt(JOptionPane.showInputDialog("Digite 1 para Furadeira e 2 para Makita:"));
+		int opcao;
 		
 		Furadeira furadeira = new Furadeira();
+		Boolean sair = true;
 		
-		if(opcao == 1) {
-			 cadastrarFuradeira(furadeira);
+		
+	// Estrutura do while
+		
+		do {
+			opcao = Integer.parseInt(JOptionPane.showInputDialog("Digite 1 para Furadeira  -  2 para Makita - 3  Para sair "));
+			
+			if(!(opcao != 1 || opcao != 2 || opcao != 3)) {
+				if(opcao == 1) {
+					 cadastrarFuradeira(furadeira);
+					
+				}
+				
+				if(opcao == 2) {
+					apresentarMakita(cadastrarMakita());
+				}
+				
+				if(opcao == 3) {
+					sair = false;
+					System.exit(0);// Encerrar o sistema
+				}
+			
+			}else {
+				JOptionPane.showMessageDialog(null, "Invalido!!!!");
+					
+			}
+		
+		}while(sair);
+		
+		
+		
+		
+		/*
+		while (sair) {
+			opcao = Integer.parseInt(JOptionPane.showInputDialog("Digite 1 para Furadeira  -  2 para Makita - 3  Para sair "));
+			
+			if(opcao == 1) {
+				 cadastrarFuradeira(furadeira);
+				
+			}
+			
+			if(opcao == 2) {
+				apresentarMakita(cadastrarMakita());
+			}
+			
+			if(opcao == 3) {
+				sair = false;
+				System.exit(0);// Encerrar o sistema
+			}
 			
 			
 		}
-		
-		if(opcao == 2) {
-			apresentarMakita(cadastrarMakita());
-		}
+		*/
+			
 		
 		
+		
+		
+		
+		
+		
+		
+	
 	}
 	
 	
