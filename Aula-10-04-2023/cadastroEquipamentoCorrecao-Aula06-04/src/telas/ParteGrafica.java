@@ -2,6 +2,7 @@ package telas;
 
 import javax.swing.JOptionPane;
 
+import arquivo.ManipulaArquivo;
 import entidades.Furadeira;
 import entidades.Makita;
 import servico.Calculos;
@@ -10,9 +11,10 @@ public class ParteGrafica {
 	Calculos calc = new Calculos();
 	
 	
-	public void cadastrarFuradeira(Furadeira furadeira) {
+	
+	public Furadeira cadastrarFuradeira() {
 		
-		
+		Furadeira furadeira = new Furadeira();
 		
 		// Recebe os dados do usuario e armazena nos atributos do objeto
 		furadeira.setCodigo(JOptionPane.showInputDialog("Digite o codigo: "));
@@ -24,7 +26,7 @@ public class ParteGrafica {
 		//Chama o metodo calcular lucro
 		furadeira.setLucro(calc.calcularLucro(furadeira.getPrecoDeVenda(), furadeira.getPrecoDeCompra()));
 		
-		apresentarFuradeira(furadeira);
+		return furadeira;
 		
 		
 		
@@ -67,8 +69,8 @@ public class ParteGrafica {
 	
 	public void menu() {
 		int opcao;
+		ManipulaArquivo manipulaArquivo = new ManipulaArquivo();
 		
-		Furadeira furadeira = new Furadeira();
 		Boolean sair = true;
 		
 		
@@ -77,9 +79,9 @@ public class ParteGrafica {
 		do {
 			opcao = Integer.parseInt(JOptionPane.showInputDialog("Digite 1 para Furadeira  -  2 para Makita - 3  Para sair "));
 			
-			if(!(opcao != 1 || opcao != 2 || opcao != 3)) {
+			
 				if(opcao == 1) {
-					 cadastrarFuradeira(furadeira);
+					 manipulaArquivo.registrarFuradeira(cadastrarFuradeira());
 					
 				}
 				
@@ -92,10 +94,7 @@ public class ParteGrafica {
 					System.exit(0);// Encerrar o sistema
 				}
 			
-			}else {
-				JOptionPane.showMessageDialog(null, "Invalido!!!!");
-					
-			}
+			
 		
 		}while(sair);
 		

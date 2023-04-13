@@ -1,0 +1,24 @@
+Cadastro escolar:
+
+		Pessoa:
+			Nome
+			Matricula
+
+		Aluno:
+			Turma
+
+		
+		Professor:
+			Disciplina
+			
+
+		Coordenador:
+			Gerencia
+
+
+Necessidades:
+	1 - Criar um menu para o usuario escolher quem ele deseja cadastrar ou encerrar o programa.(Use JoptionPane)
+	2 - O usuario pode cadastrar quantas vezes quiser.
+	3 - Registrar todos os dados cadastrados em algum arquivo.
+	4 - Encapsulamento e herança obrigatorio.
+	
