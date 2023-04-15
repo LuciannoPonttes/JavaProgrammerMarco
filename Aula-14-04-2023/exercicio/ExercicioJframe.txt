@@ -1,0 +1,1 @@
+Criar uma tela em java que recebe nome, cpf e time de futebol do usuario e apresente o que foi digitado no console.
