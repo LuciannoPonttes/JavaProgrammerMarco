@@ -1,0 +1,16 @@
+Cadastro de Funcionarios:
+
+	Pessoa
+		Nome 
+		Cpf
+
+	
+	Coordenador - 
+		Coordenanao 
+
+	Atendente - 
+		setor
+
+1 - Menu para escolher qual tipo de funcionario sera cadastrados.
+2 - Exibir formulario que será cadastrado.  
+3- Registrar no arquivo

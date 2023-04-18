@@ -1,0 +1,3 @@
+O nome do gerente é: Marco
+O cpf do gerente é:456
+A gerencia do gerente é: Implantacao
