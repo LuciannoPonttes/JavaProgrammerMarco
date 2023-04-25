@@ -1,5 +1,7 @@
 package principal;
 
+import entidades.Atendente;
+import entidades.Coordenador;
 import telas.TelaMenuPrincipal;
 
 public class Principal {
@@ -8,6 +10,7 @@ public class Principal {
 		TelaMenuPrincipal telaMenuPrincipal = new TelaMenuPrincipal();
 		
 		telaMenuPrincipal.criarTelaMenuPrincipal();
+		
 		
 	}
 }

@@ -1,3 +1,4 @@
-O nome do coordenador é: Luciano
+O nome do coordenador é: Tati
 O cpf do coordenador é:031
 A gerencia do coordenador é: TI
+O salario do coordenador é: 8800.0

@@ -35,7 +35,7 @@ public class ControladorMenuPrincipal implements ActionListener {
 			
 			switch (resposta) {
 				case "1":
-					telaMenuCoordenador.criarTelaMenuCoordenador();
+					telaMenuCoordenador.criarTelaMenuCoordenador(frameMenuPrincipalRecebido);
 					frameMenuPrincipalRecebido.setVisible(false);
 					
 				break;
