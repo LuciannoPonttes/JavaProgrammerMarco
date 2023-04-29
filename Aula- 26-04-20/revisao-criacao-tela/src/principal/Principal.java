@@ -10,10 +10,23 @@ import telas.TelaMenuPrincipal;
 public class Principal {
 	public static void main(String[] args) {
 		
-		//TelaMenuPrincipal telaMenuPrincipal_1 = new TelaMenuPrincipal();
+		TelaMenuPrincipal telaMenuPrincipal_1 = new TelaMenuPrincipal();
 		
-		//telaMenuPrincipal_1.executarMenuPrincipal();
+		telaMenuPrincipal_1.executarMenuPrincipal();
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/*
 		Scanner entrada = new Scanner(System.in);
 		 
 		//Criar uma lista do tipo pessoa
@@ -52,5 +65,6 @@ public class Principal {
 			System.out.println("#########################");
 			
 		}
+		*/
 	}	
 }

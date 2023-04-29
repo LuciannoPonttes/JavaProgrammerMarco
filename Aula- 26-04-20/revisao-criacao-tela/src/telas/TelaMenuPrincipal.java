@@ -18,9 +18,9 @@ public class TelaMenuPrincipal {
 	
 	public void executarMenuPrincipal() {
 		
-		String opcao1MenuPrincipal = " Digite 1 para o item 'A'";
-		String opcao2MenuPrincipal = " Digite 2 para o item 'B'";
-		String opcao3MenuPrincipal = " Digite 2 para o item 'C'";
+		String opcao1MenuPrincipal = " Digite 1 para cadastrar";
+		String opcao2MenuPrincipal = " Digite 2 Listar";
+		
 		
 		GridLayout grid = new GridLayout (0,1);
 		
@@ -38,8 +38,7 @@ public class TelaMenuPrincipal {
 		JLabel labelOpcao2 = new JLabel(opcao2MenuPrincipal);
 		panelMenuPrincipal.add(labelOpcao2);
 		
-		JLabel labelOpcao3 = new JLabel(opcao3MenuPrincipal);
-		panelMenuPrincipal.add(labelOpcao3);
+		
 	
 		JTextField textResposta = new JTextField(10);
 		panelMenuPrincipal.add(textResposta);
@@ -47,7 +46,7 @@ public class TelaMenuPrincipal {
 		JButton buttonEnviarMenuPrincipal = new JButton("Enviar");
 		panelMenuPrincipal.add(buttonEnviarMenuPrincipal);
 		
-		ControladorMenuPrincipal controladorMenuPrincipal = new ControladorMenuPrincipal(textResposta);
+		ControladorMenuPrincipal controladorMenuPrincipal = new ControladorMenuPrincipal(textResposta, frameMenuPrincipal);
 		
 		buttonEnviarMenuPrincipal.addActionListener(controladorMenuPrincipal);
 		

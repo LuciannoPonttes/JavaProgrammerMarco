@@ -1,9 +1,8 @@
-package principal;
+package entidades;
 
 public class Pessoa {
 	private String nome;
 	private String cpf;
-	
 	public String getNome() {
 		return nome;
 	}
@@ -16,25 +15,6 @@ public class Pessoa {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	
-	
-	
-	public Pessoa(String nome, String cpf) {
-		super();
-		this.nome = nome;
-		this.cpf = cpf;
-	}
-	
-	public Pessoa() {
-		super();
-	}
-	
-	
-	
-	
-	
-	
-	
 	
 	
 }
