@@ -1,0 +1,9 @@
+Criar um Menu que direcione o usuario para 3 rotas(a,b,ou c) diferentes: 
+
+Necessidade 1 - Criação do menu
+	Atividade 1: Criar Tela do menu. 
+	Atividade 2: Criar o controlador. 
+
+Necessidade 2 - Direcionar o usuario para a rota escolhida
+	Atividade 1 - Criar o direcionamento de rota.
+	
