@@ -1,0 +1,11 @@
+Receba o cadastro de jogador de futebol
+
+	Jogador:
+	Nome
+	Cpf
+	Idade
+        Salario
+
+Receba quantos jogadores o usuario quiser, armazene em uma lista e no final apresente todos os itens cadastrados
+em uma tabela usando interfaceGrafica.
+
