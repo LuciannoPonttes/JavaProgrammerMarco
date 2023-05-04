@@ -1,0 +1,24 @@
+Crie um menu oferencedo as seguintes opções:
+
+ 1 - Cadastrar Convidado
+ 2 - Listar Convidado
+
+
+Para cadastrar:
+	Receba os dados através de interface grafica da seguinte entidade:
+
+		Convidado:
+
+			String : Nome
+			String : Convite
+			String : Endereco
+			String : Profissao
+Para Listar:
+
+	Apresente a lista de convidados através de uma interface grafica
+
+OBS: O usuario poderá cadastrar quantos convidados quiser.
+
+	
+
+	 

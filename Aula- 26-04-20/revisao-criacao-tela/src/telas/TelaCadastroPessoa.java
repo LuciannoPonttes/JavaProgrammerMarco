@@ -1,5 +1,7 @@
 package telas;
 
+import java.awt.GridLayout;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -15,13 +17,17 @@ public class TelaCadastroPessoa {
 	
 	public void cadastrarPessoa(JFrame frameMenuPrincipal, PessoaRepositorio pessoaRepositorio) {
 		
-		String nome = "Digite o nome:";
-		String cpf = "Digite o cpf:";
+		String nome = "  Digite o nome:";
+		String cpf = "   Digite o cpf:";
 	
+		GridLayout grid = new GridLayout (0,1);
+		
 		JFrame frameCadastroPessoa = new JFrame();
-		frameCadastroPessoa.setSize(200,200);
+		frameCadastroPessoa.setSize(400,250);
 		
 		JPanel panelCadastroPessoa = new JPanel();
+		
+		panelCadastroPessoa.setLayout(grid);
 		
 		JLabel labelNome = new JLabel(nome);
 		panelCadastroPessoa.add(labelNome);

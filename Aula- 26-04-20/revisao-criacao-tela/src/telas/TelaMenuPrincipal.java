@@ -13,9 +13,6 @@ import controlador.ControladorMenuPrincipal;
 
 public class TelaMenuPrincipal {
 
-	
-	
-	
 	public void executarMenuPrincipal() {
 		
 		String opcao1MenuPrincipal = " Digite 1 para cadastrar";

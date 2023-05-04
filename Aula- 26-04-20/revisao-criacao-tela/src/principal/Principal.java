@@ -18,14 +18,6 @@ public class Principal {
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
 		/*
 		Scanner entrada = new Scanner(System.in);
 		 

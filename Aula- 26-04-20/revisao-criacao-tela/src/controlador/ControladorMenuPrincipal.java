@@ -12,6 +12,7 @@ import javax.swing.JTextField;
 import entidades.Pessoa;
 import repositorio.PessoaRepositorio;
 import telas.TelaCadastroPessoa;
+import telas.TelaListaPessoa;
 
 public class ControladorMenuPrincipal implements ActionListener {
 
@@ -28,6 +29,7 @@ public class ControladorMenuPrincipal implements ActionListener {
 
 
 	TelaCadastroPessoa telaCadastroPessoa = new TelaCadastroPessoa();
+	TelaListaPessoa telaListaPessoa = new TelaListaPessoa();
 	
 	PessoaRepositorio pessoaRepositorio = new PessoaRepositorio();
 	
@@ -41,7 +43,10 @@ public class ControladorMenuPrincipal implements ActionListener {
 				frameMenuPrincipal.setVisible(false);
 				break;
 			case "2":
-				imprimirPessoas(pessoaRepositorio.retonarListaPessoas());
+				telaListaPessoa.listarPessoa(pessoaRepositorio.retonarListaPessoas(), frameMenuPrincipal);
+				frameMenuPrincipal.setVisible(false);
+				
+				//imprimirPessoas(pessoaRepositorio.retonarListaPessoas());
 				break;
 			case "3":
 				JOptionPane.showMessageDialog(null, "Opção C");

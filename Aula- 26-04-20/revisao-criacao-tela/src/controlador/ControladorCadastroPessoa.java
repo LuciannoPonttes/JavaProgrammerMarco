@@ -17,6 +17,7 @@ public class ControladorCadastroPessoa implements ActionListener {
 	JTextField cpfRecebido;
 	JFrame frameMenuPrincipalRecebido;
 	JFrame frameCadastroPessoaRecebido;
+	
 	PessoaRepositorio pessoaRepositorioRecebido;
 	
 	

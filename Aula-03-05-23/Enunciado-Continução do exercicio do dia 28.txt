@@ -1,4 +1,4 @@
-Receba o cadastro de jogador de futebol
+Receba o cadastro de jogador de futebol em interface grafica
 
 	Jogador:
 	Nome
