@@ -10,6 +10,7 @@ import javax.swing.JTextField;
 import entidades.Jogador;
 import repositorio.RepositorioJogador;
 import telas.TelaCadastroJogador;
+import telas.TelaDeletarJogador;
 import telas.TelaListarJogador;
 
 public class ControladorTelaMenuJogador implements ActionListener {
@@ -24,6 +25,7 @@ public class ControladorTelaMenuJogador implements ActionListener {
 	
 	TelaCadastroJogador telaCadastroJogador = new TelaCadastroJogador();
 	TelaListarJogador telaListarJogador = new TelaListarJogador();
+	TelaDeletarJogador deletarJogador = new TelaDeletarJogador();
 
 	RepositorioJogador repositorioJogador = new RepositorioJogador();
 	
@@ -42,6 +44,12 @@ public class ControladorTelaMenuJogador implements ActionListener {
 			case "2": 
 				
 				telaListarJogador.listarJogador(repositorioJogador.retornaListaJogadores(), frameTelaMenuPrincipal);
+				frameTelaMenuPrincipal.setVisible(false);
+				
+				break;
+			case "3": 
+				
+				deletarJogador.deletarJogador(repositorioJogador.retornaListaJogadores(), frameTelaMenuPrincipal, repositorioJogador );
 				frameTelaMenuPrincipal.setVisible(false);
 				
 				break;
