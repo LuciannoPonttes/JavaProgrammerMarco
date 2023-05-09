@@ -38,18 +38,25 @@ public class RepositorioJogador implements InterfaceJogador {
 		return resultado;
 	}
 
+	//Busca o jogador de acordo com o CPF, caso não encontre o metodo retorna null
 	@Override
 	public Jogador buscarJogador(String cpf) {
 		
 		for (Jogador jogadorVerificado:retornaListaJogadores()) {
 			if(jogadorVerificado.getCpf().equals(cpf)) {
-				
 				return jogadorVerificado;
 			}
 			
 		}
 	
 		return null;
+	}
+
+	@Override
+	public void alterarJogador(Jogador jogadorAtual, Jogador jogadorNovo) {
+		
+		listaJogares.remove(jogadorAtual);
+		listaJogares.add(jogadorNovo);
 	}
 
 }

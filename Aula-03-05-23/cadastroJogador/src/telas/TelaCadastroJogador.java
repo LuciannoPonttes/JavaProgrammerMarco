@@ -1,6 +1,7 @@
 package telas;
 
 import java.awt.GridLayout;
+import java.util.List;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -40,8 +41,6 @@ public class TelaCadastroJogador {
 		
 		JButton buttonTelaCadastroJogador = new JButton("Enviar");
 		panelTelaCadastroJogador.add(buttonTelaCadastroJogador);
-		
-		
 		frameTelaCadastroJogador.add(panelTelaCadastroJogador);
 		frameTelaCadastroJogador.setVisible(true);
 		

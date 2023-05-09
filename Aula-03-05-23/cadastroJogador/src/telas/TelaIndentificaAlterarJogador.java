@@ -10,16 +10,15 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 
-import controlador.ControladorTelaDeletarJogador;
+import controlador.ControladordentificaAlterarJogador;
 import entidades.Jogador;
 import repositorio.RepositorioJogador;
 
-public class TelaDeletarJogador {
+public class TelaIndentificaAlterarJogador {
 
-	public void deletarJogador(List<Jogador> listaJogadores, JFrame menuPrincipal, RepositorioJogador repositorioJogador) {
+	public void criarTelaIndentificaAlterarJogador(List<Jogador> listaJogadores, JFrame menuPrincipal, RepositorioJogador repositorioJogador) {
 		
-		
-		int quantidadeDeLinhas = listaJogadores.size();// Quantidade de linhas da tabela
+int quantidadeDeLinhas = listaJogadores.size();// Quantidade de linhas da tabela
 		
 		String [][] tabelaString = new String [quantidadeDeLinhas][2];
 		
@@ -41,8 +40,8 @@ public class TelaDeletarJogador {
 		
 		String nomesColunas[] = {"NOME", "CPF"};
 		
-		JFrame frameDeletarJogador = new JFrame();
-		frameDeletarJogador.setSize(500, 600);
+		JFrame frameAlterarJogador = new JFrame();
+		frameAlterarJogador.setSize(500, 600);
 		
 		JTable tabelaJogador = new JTable(tabelaString, nomesColunas);// A tabela precisa receber os nomes dos titulos das colunas e matrix com as strings
 		
@@ -54,7 +53,7 @@ public class TelaDeletarJogador {
 	    
 	    JPanel panelListarProgramador = new JPanel();
 	    
-	    JLabel labelCpf = new JLabel("Digite o cpf para deletar:");
+	    JLabel labelCpf = new JLabel("Digite o cpf para alterar:");
 	    panelListarProgramador.add(labelCpf);
 	    
 	    
@@ -63,24 +62,21 @@ public class TelaDeletarJogador {
 	    
 	    panelListarProgramador.add(scrollPaneListarJogador);
 		
-	    JButton deletarTelaDeletarJogador = new JButton("Deletar");
-		panelListarProgramador.add(deletarTelaDeletarJogador);
+	    JButton alterarTelaAlterarJogador = new JButton("Alterar");
+		panelListarProgramador.add(alterarTelaAlterarJogador);
 		
 		JButton voltarTelaDeletarJogador = new JButton("Voltar");
 		panelListarProgramador.add(voltarTelaDeletarJogador);
 	    
 		
-		frameDeletarJogador.add(panelListarProgramador);
-		frameDeletarJogador.setVisible(true);
+		frameAlterarJogador.add(panelListarProgramador);
+		frameAlterarJogador.setVisible(true);
 		
-		ControladorTelaDeletarJogador controladorTelaDeletarJogador = new ControladorTelaDeletarJogador(menuPrincipal, frameDeletarJogador, repositorioJogador, textCpfDelete);
+		ControladordentificaAlterarJogador alterarJogador = new ControladordentificaAlterarJogador(menuPrincipal, frameAlterarJogador, repositorioJogador, textCpfDelete);
 		
-		//Botoes
-		deletarTelaDeletarJogador.addActionListener(controladorTelaDeletarJogador);
+		alterarTelaAlterarJogador.addActionListener(alterarJogador);
+		voltarTelaDeletarJogador.addActionListener(alterarJogador);
 		
-		voltarTelaDeletarJogador.addActionListener(controladorTelaDeletarJogador);
-	
 	}
-	
 	
 }

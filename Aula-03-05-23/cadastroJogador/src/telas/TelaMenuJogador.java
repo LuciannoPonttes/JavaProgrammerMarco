@@ -19,6 +19,8 @@ public class TelaMenuJogador {
 		String opcao1 = "Digite 1 - para Cadastrar";
 		String opcao2 = "Digite 2 - para Listar";
 		String opcao3 = "Digite 3 - para Deletar";
+		String opcao4 = "Digite 4 - para Atualizar";
+		
 		
 		JFrame frameTelaMenuJogador = new JFrame();
 		frameTelaMenuJogador.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -38,6 +40,11 @@ public class TelaMenuJogador {
 		
 		JLabel labelOpcao3 = new JLabel(opcao3);
 		panelTelaMenuJogador.add(labelOpcao3);
+		
+		JLabel labelOpcao4 = new JLabel(opcao4);
+		panelTelaMenuJogador.add(labelOpcao4);
+		
+		
 		
 		JTextField textRespostaTelaMenuJogador = new JTextField(10);
 		panelTelaMenuJogador.add(textRespostaTelaMenuJogador);

@@ -11,6 +11,7 @@ import entidades.Jogador;
 import repositorio.RepositorioJogador;
 import telas.TelaCadastroJogador;
 import telas.TelaDeletarJogador;
+import telas.TelaIndentificaAlterarJogador;
 import telas.TelaListarJogador;
 
 public class ControladorTelaMenuJogador implements ActionListener {
@@ -26,7 +27,8 @@ public class ControladorTelaMenuJogador implements ActionListener {
 	TelaCadastroJogador telaCadastroJogador = new TelaCadastroJogador();
 	TelaListarJogador telaListarJogador = new TelaListarJogador();
 	TelaDeletarJogador deletarJogador = new TelaDeletarJogador();
-
+	TelaIndentificaAlterarJogador telaIndentificaAlterarJogador = new TelaIndentificaAlterarJogador();
+	
 	RepositorioJogador repositorioJogador = new RepositorioJogador();
 	
 	@Override
@@ -52,6 +54,12 @@ public class ControladorTelaMenuJogador implements ActionListener {
 				deletarJogador.deletarJogador(repositorioJogador.retornaListaJogadores(), frameTelaMenuPrincipal, repositorioJogador );
 				frameTelaMenuPrincipal.setVisible(false);
 				
+				break;
+			case "4": 
+				
+				
+				telaIndentificaAlterarJogador.criarTelaIndentificaAlterarJogador(repositorioJogador.retornaListaJogadores(), frameTelaMenuPrincipal, repositorioJogador);
+				frameTelaMenuPrincipal.setVisible(false);
 				break;
 		
 		
