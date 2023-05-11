@@ -5,27 +5,37 @@ import java.util.Iterator;
 import java.util.List;
 
 import entidades.Jogador;
+import persistencia.JogadorDao;
 
 public class RepositorioJogador implements InterfaceJogador {
 
 	List<Jogador> listaJogares = new ArrayList<>();
 	
+	JogadorDao jogadorDao = new JogadorDao();
+	
 	@Override
 	public void salvarJogador(Jogador jogador) {
-		listaJogares.add(jogador);
+		//listaJogares.add(jogador); Usando a lista
+		
+		jogadorDao.salvarJogadorBanco(jogador);
 		
 	}
 
 	@Override
 	public List<Jogador> retornaListaJogadores() {
 		
-		return listaJogares;
+		return jogadorDao.buscarListaDeJogador();
+		
+		//return listaJogares;
 	}
 
 	@Override
 	public boolean deletarJogador(Jogador jogador) {
 		boolean resultado;
 		
+		resultado = jogadorDao.deletarJogadorPeloCpf(jogador.getCpf());
+		
+		/*Para lista
 		try {
 			
 			listaJogares.remove(jogador);
@@ -34,6 +44,8 @@ public class RepositorioJogador implements InterfaceJogador {
 		} catch (Exception e) {
 			resultado = false;
 		}
+		
+		*/
 		
 		return resultado;
 	}

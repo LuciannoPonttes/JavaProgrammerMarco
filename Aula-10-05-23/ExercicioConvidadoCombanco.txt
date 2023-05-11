@@ -1,0 +1,3 @@
+Insira banco de dados no exericico de convidado.
+
+Pegue a refencia no git na pasta do dia 03-05
