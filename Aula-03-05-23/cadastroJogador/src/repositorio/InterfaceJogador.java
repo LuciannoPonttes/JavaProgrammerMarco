@@ -10,6 +10,6 @@ public interface InterfaceJogador {
 	public List<Jogador> retornaListaJogadores();
 	public boolean deletarJogador(Jogador jogador);
 	public Jogador buscarJogador(String cpf);
-	public void alterarJogador(Jogador jogadorAtual, Jogador jogadorNovo );
+	public void alterarJogador(Jogador jogadorNovo);
 	
 }

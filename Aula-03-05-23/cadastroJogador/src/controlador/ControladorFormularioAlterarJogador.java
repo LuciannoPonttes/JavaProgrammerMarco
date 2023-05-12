@@ -41,7 +41,7 @@ public class ControladorFormularioAlterarJogador implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		
-		repositorioJogadorRecebido.alterarJogador(jogadorAtual, popularJogadorNovo());
+		repositorioJogadorRecebido.alterarJogador(popularJogadorNovo());
 		
 		frameMenuInicial.setVisible(true);
 		

@@ -65,10 +65,13 @@ public class RepositorioJogador implements InterfaceJogador {
 	}
 
 	@Override
-	public void alterarJogador(Jogador jogadorAtual, Jogador jogadorNovo) {
+	public void alterarJogador(Jogador jogadorNovo) {
 		
-		listaJogares.remove(jogadorAtual);
-		listaJogares.add(jogadorNovo);
+		jogadorDao.alterarJogador(jogadorNovo);
+		
+		
+		//listaJogares.remove(jogadorAtual);
+		//listaJogares.add(jogadorNovo);
 	}
 
 }

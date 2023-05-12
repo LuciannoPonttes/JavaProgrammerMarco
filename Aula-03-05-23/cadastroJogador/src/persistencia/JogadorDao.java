@@ -10,10 +10,13 @@ import com.mysql.cj.protocol.Resultset;
 import com.mysql.cj.xdevapi.Result;
 
 import entidades.Jogador;
+import manipulacaoArquivo.LogCrudJogador;
 
 //Responsavel por acessar a tabela do objeto jogador
 public class JogadorDao {
 
+	LogCrudJogador logCrudJogador = new LogCrudJogador();
+	
 	public boolean salvarJogadorBanco(Jogador jogador) {
 		
 		FabricaConexao fabricaConexao = new FabricaConexao();
@@ -38,7 +41,7 @@ public class JogadorDao {
 			
 			salvamento = true;
 			System.out.println("Jogador Registrado com sucesso");
-			
+			logCrudJogador.escreverNoArquivoLogJogador(jogador, "Cadastrar");
 			
 		} catch (Exception mensagemErro) {
 			System.out.println(mensagemErro);
@@ -119,7 +122,6 @@ public class JogadorDao {
 		}
 		
 	
-		
 		return exclusao;
 	}
 	
@@ -128,8 +130,6 @@ public class JogadorDao {
 		String comandoSqlBuscar = "select * from tabela_jogador";
 		
 		List<Jogador> listaJogadoresDoBanco = new ArrayList<>();
-		
-		
 		
 		FabricaConexao fabricaConexao = new FabricaConexao();
 		
@@ -180,14 +180,64 @@ public class JogadorDao {
 			
 	}
 		
-	
-		
-		
-	
-		
-		
 		
 		return listaJogadoresDoBanco;
+	}
+	
+	public boolean alterarJogador(Jogador jogador) {
+		
+		FabricaConexao fabricaConexao = new FabricaConexao();
+		
+		boolean alteracao = false; //Resposta do metodo
+		String comandoSqlUpdate = "update  tabela_jogador set cpf = ?, nome = ? where  cpf = ?" ;//Comando SQL
+		
+		
+		
+		Connection conexaoRecebida = null; // Recebe a conexao
+		PreparedStatement declaracaoComando = null; // Preparação do comando
+		
+		try {
+			conexaoRecebida = fabricaConexao.criarConexao();
+			
+			declaracaoComando = (PreparedStatement)conexaoRecebida.prepareStatement(comandoSqlUpdate);// Preparação do comanda recebe o banco e o comando SQL
+			
+			declaracaoComando.setString(1, jogador.getCpf());
+			declaracaoComando.setString(2, jogador.getNome());
+			
+			declaracaoComando.setString(3, jogador.getCpf());
+			
+			declaracaoComando.execute();
+			
+			alteracao = true;
+			System.out.println("Jogador Alterado com sucesso");
+			logCrudJogador.escreverNoArquivoLogJogador(jogador, "Alterar");
+			
+		} catch (Exception mensagemErro) {
+			System.out.println(mensagemErro);
+			System.out.println("Erro ao alterar!");
+			alteracao = false;
+			
+		}finally { // Executar depois de verificar o try(sempre executado)
+			
+			try {//Try para fechar a conexao
+				
+				if(conexaoRecebida != null) {// Verifica se a conexão é nula
+					conexaoRecebida.close();
+				}
+				
+				if (declaracaoComando != null) {
+					declaracaoComando.close();
+				}
+				
+			} catch (Exception msgErro) {
+				System.out.println(msgErro);
+				System.out.println("Erro ao tentar fechar a conexao");
+			}
+			
+		}
+		
+		return alteracao;
+
 	}
 	
 	

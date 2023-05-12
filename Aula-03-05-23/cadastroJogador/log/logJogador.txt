@@ -1,0 +1,10 @@
+2023-05-12T19:56:13.966522200 - O jogador Neymar foi cadastrado!
+2023-05-12T20:01:00.613858900 - O jogador Halaad foi cadastrado!
+2023-05-12T20:04:28.907929400 - O jogador Vinicius Junior  foi cadastrado!
+2023-05-12T20:08:12.051927600 - O jogador Neymar da Silva foi cadastrado!
+2023-05-12T20:09:55.943677600 - O jogador Ronaldinho Gaucho foi alterado!
+
+2023-05-12T20:30:26.625305900 - O jogador Luciano Capitao foi cadastrado!
+2023-05-12T20:30:59.330108300 - O jogador Luciano Capitao 10 e Faixa foi alterado!
+2023-05-12T20:32:55.925225300 - O jogador Tatianacom cpf456 foi alterado!
+2023-05-12T20:34:17.199875100 - O jogador(a) Luciano Pontes com Cpf: 031 foi alterado!

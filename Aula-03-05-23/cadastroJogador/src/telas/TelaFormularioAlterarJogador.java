@@ -40,6 +40,7 @@ public class TelaFormularioAlterarJogador {
 		
 		JTextField textCpf = new  JTextField(10);
 		textCpf.setText(jogadorEncontrado.getCpf());//Adiciona o cpf do jogador encontrado no Campo de texto do nome
+		textCpf.setEditable(false); // Proibir edição
 		panelFormularioAlterar.add(textCpf);
 		
 		JButton buttonTelaCadastroJogador = new JButton("Alterar Jogador");
