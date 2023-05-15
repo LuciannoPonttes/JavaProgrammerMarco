@@ -1,10 +1,6 @@
 package principal;
 
-import java.sql.Connection;
 
-import javax.swing.JOptionPane;
-
-import persistencia.FabricaConexao;
 import telas.TelaMenuJogador;
 
 public class Principal {

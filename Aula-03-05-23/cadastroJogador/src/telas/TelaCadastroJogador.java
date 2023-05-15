@@ -16,8 +16,10 @@ public class TelaCadastroJogador {
 	
 	public void criarTelaCadastroJogador(JFrame menuPrincipal, RepositorioJogador repositorioJogador) {
 		
-		String nome = "Digite o nome";
-		String cpf = "Digite o cpf";
+		String cpf = "DIGITE O CPF:";
+		String nome = "DIGITE O NOME:";
+		String email = "DIGITE O EMAIL:";
+		
 		
 		JFrame frameTelaCadastroJogador = new JFrame();
 		frameTelaCadastroJogador.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -27,24 +29,32 @@ public class TelaCadastroJogador {
 		GridLayout grid = new GridLayout (0,1);
 		panelTelaCadastroJogador.setLayout(grid);
 		
-		JLabel labelNome = new JLabel(nome);
-		panelTelaCadastroJogador.add(labelNome);
-		
-		JTextField textNome = new  JTextField(10);
-		panelTelaCadastroJogador.add(textNome);
-		
 		JLabel labelCpf = new JLabel(cpf);
 		panelTelaCadastroJogador.add(labelCpf);
 		
 		JTextField textCpf = new  JTextField(10);
 		panelTelaCadastroJogador.add(textCpf);
 		
+		JLabel labelNome = new JLabel(nome);
+		panelTelaCadastroJogador.add(labelNome);
+		
+		JTextField textNome = new  JTextField(10);
+		panelTelaCadastroJogador.add(textNome);
+		
+		JLabel labelEmail = new JLabel(email);
+		panelTelaCadastroJogador.add(labelEmail);
+		
+		JTextField textEmail = new  JTextField(10);
+		panelTelaCadastroJogador.add(textEmail);
+		
+		
+		
 		JButton buttonTelaCadastroJogador = new JButton("Enviar");
 		panelTelaCadastroJogador.add(buttonTelaCadastroJogador);
 		frameTelaCadastroJogador.add(panelTelaCadastroJogador);
 		frameTelaCadastroJogador.setVisible(true);
 		
-		ControladorTelaCadastroJogador controladorTelaCadastroJogador = new ControladorTelaCadastroJogador(textNome, textCpf, menuPrincipal, frameTelaCadastroJogador, repositorioJogador);
+		ControladorTelaCadastroJogador controladorTelaCadastroJogador = new ControladorTelaCadastroJogador(textNome, textCpf, menuPrincipal, frameTelaCadastroJogador, repositorioJogador, textEmail);
 		buttonTelaCadastroJogador.addActionListener(controladorTelaCadastroJogador);
 	}
 }

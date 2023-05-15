@@ -1,0 +1,14 @@
+				CRUD JAVA
+Tecnologia utilizadas:
+
+	1 - JAVA(linguagem de programação)
+	2 - MySql(banco de dados) ----------- Biblioteca Externa
+	3 - Sql(Linguagem de banco)
+	4 - Orientação a objeto
+	5 - Manipoulação de eventos(action Listener) 
+	6 - Java Swing
+
+Ferramenta de gestão de projetor:
+	Iremos usar...
+
+	

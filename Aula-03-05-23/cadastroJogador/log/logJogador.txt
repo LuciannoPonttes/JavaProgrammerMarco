@@ -8,3 +8,5 @@
 2023-05-12T20:30:59.330108300 - O jogador Luciano Capitao 10 e Faixa foi alterado!
 2023-05-12T20:32:55.925225300 - O jogador Tatianacom cpf456 foi alterado!
 2023-05-12T20:34:17.199875100 - O jogador(a) Luciano Pontes com Cpf: 031 foi alterado!
+2023-05-15T19:28:11.833322400 - O jogador(a) LUCIANO com Cpf: 031 foi cadastrado!
+2023-05-15T19:58:55.472533800 - O jogador(a) luciano com Cpf: 031 foi cadastrado!

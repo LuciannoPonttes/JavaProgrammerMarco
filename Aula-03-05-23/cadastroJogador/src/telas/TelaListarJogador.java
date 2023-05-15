@@ -18,25 +18,31 @@ public class TelaListarJogador {
 		
 		int quantidadeDeLinhas = listaJogadores.size();// Quantidade de linhas da tabela
 		
-		String [][] tabelaString = new String [quantidadeDeLinhas][2];
+		String [][] tabelaString = new String [quantidadeDeLinhas][3];
 		
 		int posicaoColuna = 0; //Representa a coluna
 		int posicaoLinha = 0; // Representa a linha
 		
 		for (Jogador jogador: listaJogadores) {
 			
+			tabelaString[posicaoLinha][posicaoColuna] = jogador.getCpf();
+			
+			posicaoColuna++;// posicaoColuna =  posicaoColuna + 1
+			
 			tabelaString[posicaoLinha][posicaoColuna] = jogador.getNome();
 			
 			posicaoColuna++;// posicaoColuna =  posicaoColuna + 1
 			
-			tabelaString[posicaoLinha][posicaoColuna] = jogador.getCpf();
+			tabelaString[posicaoLinha][posicaoColuna] = jogador.getEmail();
+			
+			posicaoColuna++;// posicaoColuna =  posicaoColuna + 1
 			
 			posicaoLinha++;// posicaoLinha = posicaoLinha + 1
 			posicaoColuna = 0;
 			
 		}
 		
-		String nomesColunas[] = {"NOME", "CPF"};
+		String nomesColunas[] = {"CPF", "NOME", "EMAIL"};
 		
 		JFrame frameListarJogador = new JFrame();
 		frameListarJogador.setSize(500, 600);

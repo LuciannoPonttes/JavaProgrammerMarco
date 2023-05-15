@@ -5,6 +5,7 @@ public class Jogador {
 	
 	private	String nome;
 	private	String cpf;
+	private String email;
 	
 	
 	
@@ -19,6 +20,12 @@ public class Jogador {
 	}
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
 	}
 		
 	      

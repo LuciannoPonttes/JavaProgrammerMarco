@@ -22,7 +22,7 @@ public class JogadorDao {
 		FabricaConexao fabricaConexao = new FabricaConexao();
 		
 		boolean salvamento = false; //Resposta do metodo
-		String comandoSqlInsert = "insert into tabela_jogador(cpf,nome) values(?,?)";//Comando SQL
+		String comandoSqlInsert = "insert into tabela_jogador(cpf,nome, email) values(?,?,?)";//Comando SQL
 		
 		
 		
@@ -36,11 +36,13 @@ public class JogadorDao {
 			
 			declaracaoComando.setString(1, jogador.getCpf());
 			declaracaoComando.setString(2, jogador.getNome());
+			declaracaoComando.setString(3, jogador.getEmail());
 			
 			declaracaoComando.execute();
 			
 			salvamento = true;
 			System.out.println("Jogador Registrado com sucesso");
+			
 			logCrudJogador.escreverNoArquivoLogJogador(jogador, "Cadastrar");
 			
 		} catch (Exception mensagemErro) {
@@ -150,6 +152,7 @@ public class JogadorDao {
 				
 				jogador.setNome(resultadoTabela.getString("nome"));
 				jogador.setCpf(resultadoTabela.getString("cpf"));
+				jogador.setEmail(resultadoTabela.getString("email"));
 				
 				listaJogadoresDoBanco.add(jogador);
 				
@@ -210,6 +213,7 @@ public class JogadorDao {
 			
 			alteracao = true;
 			System.out.println("Jogador Alterado com sucesso");
+			//chamar o log
 			logCrudJogador.escreverNoArquivoLogJogador(jogador, "Alterar");
 			
 		} catch (Exception mensagemErro) {
