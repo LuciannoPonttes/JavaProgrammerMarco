@@ -9,7 +9,9 @@ import javax.swing.JTextField;
 
 import entidades.Jogador;
 import repositorio.RepositorioJogador;
-import validacao.ValidacaoJogador;
+import validacao.MensagemErroValidacaoJogador;
+import validacao.ValidaEntidade;
+
 
 public class ControladorTelaCadastroJogador implements ActionListener {
 
@@ -34,9 +36,9 @@ public class ControladorTelaCadastroJogador implements ActionListener {
 	JFrame menuPrincipalRecebido;//para abrir
 	JFrame telaCadastroJogadorecebido;// para fechar
 	RepositorioJogador repositorioJogadorRecebido;
-	ValidacaoJogador validacaoJogador = new ValidacaoJogador();
+	MensagemErroValidacaoJogador mensagemErroValidacaoJogador = new MensagemErroValidacaoJogador();
 		
-	boolean validaJogador = true;
+	String mensagemErro;
 
 
 	@Override
@@ -52,19 +54,20 @@ public class ControladorTelaCadastroJogador implements ActionListener {
 		
 		Jogador jogador = new Jogador();
 		
+		jogador.setEmail(emailRecebido.getText());
+		jogador.setNome(nomeRecebido.getText());
+		jogador.setCpf(cpfRecebido.getText());
 		
-		validaJogador = validacaoJogador.validaEmail(emailRecebido.getText());
 		
+		mensagemErro = mensagemErroValidacaoJogador.retornaMensagemErro(jogador);
 		
-			if(validaJogador) {
-				jogador.setEmail(emailRecebido.getText());
-				jogador.setNome(nomeRecebido.getText());
-				jogador.setCpf(cpfRecebido.getText());
-				return jogador;
-			}else {
-				JOptionPane.showMessageDialog(null, "O email: " + emailRecebido.getText() + " não é valido!!");
-				return null;
-			}
+		if(mensagemErro == null) {
+			return jogador;
+		}else {
+			JOptionPane.showMessageDialog(null, mensagemErro);
+			return null;
+		}
+			
 	}
 	
 	

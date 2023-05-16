@@ -1,7 +1,10 @@
 package principal;
 
 
+import java.util.Scanner;
+
 import telas.TelaMenuJogador;
+
 
 public class Principal {
 
@@ -10,37 +13,12 @@ public class Principal {
 		TelaMenuJogador telaMenuJogador = new TelaMenuJogador();
 		telaMenuJogador.criarTelaMenuJogador();
 		
+	
 		
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		/*
-		 * Usado apenas para testar a conexão
-		
-		FabricaConexao fabricaConexao = new FabricaConexao();
-		
-		Connection conexaoRecebida = fabricaConexao.criarConexao();
-		
-		
-		if(conexaoRecebida != null) {
-			JOptionPane.showMessageDialog(null, "Deu certo");
-			
-		}
-		
-		if(conexaoRecebida == null) {
-			JOptionPane.showMessageDialog(null, "Deu ruim a conexao");
-			
-		}
-		*/
-		
-		
+
 		
 	}
 }

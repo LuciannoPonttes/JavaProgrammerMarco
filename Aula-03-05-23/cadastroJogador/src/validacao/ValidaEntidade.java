@@ -2,7 +2,7 @@ package validacao;
 
 import javax.mail.internet.InternetAddress;
 
-public class ValidacaoJogador {
+public class ValidaEntidade {
 
 	public boolean validaEmail(String email) {
 		
@@ -21,6 +21,8 @@ public class ValidacaoJogador {
 		return resultado;
 		
 	}
+	
+	
 	
 	
 	
