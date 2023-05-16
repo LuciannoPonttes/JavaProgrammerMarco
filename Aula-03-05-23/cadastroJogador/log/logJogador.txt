@@ -11,3 +11,9 @@
 2023-05-15T19:28:11.833322400 - O jogador(a) LUCIANO com Cpf: 031 foi cadastrado!
 2023-05-15T19:58:55.472533800 - O jogador(a) luciano com Cpf: 031 foi cadastrado!
 2023-05-15T21:14:52.801288500 - O jogador(a) luciano com Cpf: 031 foi cadastrado!
+2023-05-15T21:52:33.972908 - O jogador(a) Luciano com Cpf: 10945975031 foi cadastrado!
+2023-05-15T22:15:27.900056100 - O jogador(a) PETERSON com Cpf: 10945975031 foi cadastrado!
+2023-05-15T22:28:27.601283200 - O jogador(a) LUCIANO com Cpf: 10945975031 foi cadastrado!
+2023-05-15T22:28:56.504801700 - O jogador(a) LUCIANO PONTES com Cpf: 10945975031 foi alterado!
+2023-05-15T22:33:28.591772600 - O jogador(a) luciano com Cpf: 94404127049 foi cadastrado!
+2023-05-15T22:43:12.368138700 - O jogador(a) allan com Cpf: 87302593043 foi cadastrado!

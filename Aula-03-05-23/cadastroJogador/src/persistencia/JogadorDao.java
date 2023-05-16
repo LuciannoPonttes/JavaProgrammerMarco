@@ -35,8 +35,8 @@ public class JogadorDao {
 			declaracaoComando = (PreparedStatement)conexaoRecebida.prepareStatement(comandoSqlInsert);// Preparação do comanda recebe o banco e o comando SQL
 			
 			declaracaoComando.setString(1, jogador.getCpf());
-			declaracaoComando.setString(2, jogador.getNome());
-			declaracaoComando.setString(3, jogador.getEmail());
+			declaracaoComando.setString(2, jogador.getNome().toUpperCase());
+			declaracaoComando.setString(3, jogador.getEmail().toUpperCase());
 			
 			declaracaoComando.execute();
 			
@@ -69,12 +69,11 @@ public class JogadorDao {
 			
 		}
 		
-		
 		return salvamento;
 		
 	}
 	
-	
+
 	public boolean deletarJogadorPeloCpf(String cpf) {
 		
 		FabricaConexao fabricaConexao = new FabricaConexao();
@@ -192,7 +191,7 @@ public class JogadorDao {
 		FabricaConexao fabricaConexao = new FabricaConexao();
 		
 		boolean alteracao = false; //Resposta do metodo
-		String comandoSqlUpdate = "update  tabela_jogador set cpf = ?, nome = ? where  cpf = ?" ;//Comando SQL
+		String comandoSqlUpdate = "update  tabela_jogador set cpf = ?, nome = ?, email = ? where  cpf = ?" ;//Comando SQL
 		
 		
 		
@@ -206,8 +205,9 @@ public class JogadorDao {
 			
 			declaracaoComando.setString(1, jogador.getCpf());
 			declaracaoComando.setString(2, jogador.getNome());
+			declaracaoComando.setString(3, jogador.getEmail());
 			
-			declaracaoComando.setString(3, jogador.getCpf());
+			declaracaoComando.setString(4, jogador.getCpf());
 			
 			declaracaoComando.execute();
 			

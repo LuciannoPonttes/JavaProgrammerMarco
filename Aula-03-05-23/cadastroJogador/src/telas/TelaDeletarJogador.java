@@ -28,18 +28,18 @@ public class TelaDeletarJogador {
 		
 		for (Jogador jogador: listaJogadores) {
 			
-			tabelaString[posicaoLinha][posicaoColuna] = jogador.getNome();
+			tabelaString[posicaoLinha][posicaoColuna] = jogador.getCpf();
 			
 			posicaoColuna++;// posicaoColuna =  posicaoColuna + 1
 			
-			tabelaString[posicaoLinha][posicaoColuna] = jogador.getCpf();
+			tabelaString[posicaoLinha][posicaoColuna] = jogador.getNome();
 			
 			posicaoLinha++;// posicaoLinha = posicaoLinha + 1
 			posicaoColuna = 0;
 			
 		}
 		
-		String nomesColunas[] = {"NOME", "CPF"};
+		String nomesColunas[] = {"CPF", "NOME"};
 		
 		JFrame frameDeletarJogador = new JFrame();
 		frameDeletarJogador.setSize(500, 600);

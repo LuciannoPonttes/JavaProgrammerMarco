@@ -17,8 +17,9 @@ public class TelaFormularioAlterarJogador {
 
 	public void formularioAlterarJogador(Jogador jogadorEncontrado, JFrame frameMenuPrincipal, RepositorioJogador repositorioJogadorRecebido) {
 		
-		String nome = "Digite o nome";
-		String cpf = "Digite o cpf";
+		String nome = "ALTERE O NOME:";
+		String cpf = "CPF(NÃO PODE SER ALTERADO)";
+		String email = "ALTERE O EMAIL:";
 		
 		JFrame frameFormularioAlterarJogador = new JFrame();
 		frameFormularioAlterarJogador.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -28,13 +29,6 @@ public class TelaFormularioAlterarJogador {
 		GridLayout grid = new GridLayout (0,1);
 		panelFormularioAlterar.setLayout(grid);
 		
-		JLabel labelNome = new JLabel(nome);
-		panelFormularioAlterar.add(labelNome);
-		
-		JTextField textNome = new  JTextField(10);
-		textNome.setText(jogadorEncontrado.getNome());//Adicionar o nome do jogador encontrado no Campo de texto do nome
-		panelFormularioAlterar.add(textNome);
-		
 		JLabel labelCpf = new JLabel(cpf);
 		panelFormularioAlterar.add(labelCpf);
 		
@@ -43,12 +37,27 @@ public class TelaFormularioAlterarJogador {
 		textCpf.setEditable(false); // Proibir edição
 		panelFormularioAlterar.add(textCpf);
 		
+		JLabel labelNome = new JLabel(nome);
+		panelFormularioAlterar.add(labelNome);
+		
+		JTextField textNome = new  JTextField(10);
+		textNome.setText(jogadorEncontrado.getNome());//Adicionar o nome do jogador encontrado no Campo de texto do nome
+		panelFormularioAlterar.add(textNome);
+		
+		JLabel labelEmail = new JLabel(email);
+		panelFormularioAlterar.add(labelEmail);
+		
+		JTextField textEmail = new  JTextField(10);
+		textEmail.setText(jogadorEncontrado.getEmail());//Adicionar o nome do jogador encontrado no Campo de texto do nome
+		panelFormularioAlterar.add(textEmail);
+		
+		
 		JButton buttonTelaCadastroJogador = new JButton("Alterar Jogador");
 		panelFormularioAlterar.add(buttonTelaCadastroJogador);
 		frameFormularioAlterarJogador.add(panelFormularioAlterar);
 		frameFormularioAlterarJogador.setVisible(true);
 		
-		ControladorFormularioAlterarJogador controladorFormularioAlterarJogador = new ControladorFormularioAlterarJogador(frameMenuPrincipal, frameFormularioAlterarJogador, textNome, textCpf, repositorioJogadorRecebido, jogadorEncontrado);
+		ControladorFormularioAlterarJogador controladorFormularioAlterarJogador = new ControladorFormularioAlterarJogador(frameMenuPrincipal, frameFormularioAlterarJogador, textNome, textCpf, repositorioJogadorRecebido, jogadorEncontrado, textEmail);
 		buttonTelaCadastroJogador.addActionListener(controladorFormularioAlterarJogador);
 		
 	}

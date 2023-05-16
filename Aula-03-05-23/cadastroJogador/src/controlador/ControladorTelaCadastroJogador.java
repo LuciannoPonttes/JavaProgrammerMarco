@@ -62,7 +62,9 @@ public class ControladorTelaCadastroJogador implements ActionListener {
 		mensagemErro = mensagemErroValidacaoJogador.retornaMensagemErro(jogador);
 		
 		if(mensagemErro == null) {
+			JOptionPane.showMessageDialog(null, "Jogador Validado!!");
 			return jogador;
+			
 		}else {
 			JOptionPane.showMessageDialog(null, mensagemErro);
 			return null;
