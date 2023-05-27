@@ -1,4 +1,5 @@
-				CRUD JAVA
+CRUD JAVA
+
 Tecnologia utilizadas:
 
 	1 - JAVA(linguagem de programação)
@@ -7,8 +8,17 @@ Tecnologia utilizadas:
 	4 - Orientação a objeto
 	5 - Manipoulação de eventos(action Listener) 
 	6 - Java Swing
-
-Ferramenta de gestão de projetor:
-	Iremos usar...
-
+	7 - Itext
+	8 - Sistema operacional Windows 
 	
+
+Gestão de projetos:
+
+	Agil
+	Kanban
+	Ferramenta de gestão do git
+	
+
+Controle de versão
+	git
+	git hub
