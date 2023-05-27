@@ -3,21 +3,20 @@ package principal;
 
 import java.util.Scanner;
 
-import telas.TelaMenuJogador;
+import telas.TelaLogin;
+
+
+
 
 
 public class Principal {
 
 	public static void main(String args[]) {
 		
-		TelaMenuJogador telaMenuJogador = new TelaMenuJogador();
-		telaMenuJogador.criarTelaMenuJogador();
+		TelaLogin telaLogin = new TelaLogin();
+		telaLogin.iniciarTelaLogin();
 		
 	
-		
-		
-		
-		
 
 		
 	}

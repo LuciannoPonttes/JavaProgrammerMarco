@@ -9,12 +9,13 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 import controlador.ControladorTelaMenuJogador;
+import entidades.Usuario;
 
 public class TelaMenuJogador {
 
 	//fora do metodo somente variaveis
 	
-	public void criarTelaMenuJogador() {
+	public void criarTelaMenuJogador(Usuario usuarioEncontrado) {
 		
 		String opcao1 = "Digite 1 - para Cadastrar";
 		String opcao2 = "Digite 2 - para Listar";
@@ -31,6 +32,8 @@ public class TelaMenuJogador {
 		GridLayout grid = new GridLayout (0,1);
 		panelTelaMenuJogador.setLayout(grid);
 		
+		JLabel labelUsuario = new JLabel("### Olá " + usuarioEncontrado.getNome()+" ###");
+		panelTelaMenuJogador.add(labelUsuario);
 		
 		JLabel labelOpcao1 = new JLabel(opcao1);
 		panelTelaMenuJogador.add(labelOpcao1);
@@ -55,7 +58,7 @@ public class TelaMenuJogador {
 		frameTelaMenuJogador.add(panelTelaMenuJogador);
 		frameTelaMenuJogador.setVisible(true);
 		
-		ControladorTelaMenuJogador controladorTelaMenuJogador = new ControladorTelaMenuJogador(frameTelaMenuJogador, textRespostaTelaMenuJogador);
+		ControladorTelaMenuJogador controladorTelaMenuJogador = new ControladorTelaMenuJogador(frameTelaMenuJogador, textRespostaTelaMenuJogador, usuarioEncontrado);
 		buttonEnviarTelaMenuJogador.addActionListener(controladorTelaMenuJogador);
 		
 	}

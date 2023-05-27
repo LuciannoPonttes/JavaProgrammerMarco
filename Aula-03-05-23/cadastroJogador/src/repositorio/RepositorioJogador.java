@@ -1,7 +1,7 @@
 package repositorio;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+
 import java.util.List;
 
 import entidades.Jogador;
@@ -33,7 +33,7 @@ public class RepositorioJogador implements InterfaceJogador {
 	public boolean deletarJogador(Jogador jogador) {
 		boolean resultado;
 		
-		resultado = jogadorDao.deletarJogadorPeloCpf(jogador.getCpf());
+		resultado = jogadorDao.deletarJogadorPeloCpf(jogador);
 		
 		/*Para lista
 		try {

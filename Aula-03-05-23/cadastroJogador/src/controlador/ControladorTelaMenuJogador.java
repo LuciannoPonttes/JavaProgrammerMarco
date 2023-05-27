@@ -5,9 +5,11 @@ import java.awt.event.ActionListener;
 import java.util.List;
 
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 import entidades.Jogador;
+import entidades.Usuario;
 import repositorio.RepositorioJogador;
 import telas.TelaCadastroJogador;
 import telas.TelaDeletarJogador;
@@ -19,9 +21,13 @@ public class ControladorTelaMenuJogador implements ActionListener {
 	JFrame frameTelaMenuPrincipal;
 	JTextField respostaTelaMenuPrincipal;
 	
-	public ControladorTelaMenuJogador(JFrame frameTelaMenuPrincipal, JTextField respostaTelaMenuPrincipal) {
+	Usuario usuarioRecebido;
+	
+	public ControladorTelaMenuJogador(JFrame frameTelaMenuPrincipal, 
+			JTextField respostaTelaMenuPrincipal, Usuario usuarioEncontrado) {
 		this.frameTelaMenuPrincipal = frameTelaMenuPrincipal;
 		this.respostaTelaMenuPrincipal = respostaTelaMenuPrincipal;
+		this.usuarioRecebido = usuarioEncontrado;
 	}
 	
 	TelaCadastroJogador telaCadastroJogador = new TelaCadastroJogador();
@@ -51,9 +57,12 @@ public class ControladorTelaMenuJogador implements ActionListener {
 				break;
 			case "3": 
 				
-				deletarJogador.deletarJogador(repositorioJogador.retornaListaJogadores(), frameTelaMenuPrincipal, repositorioJogador );
-				frameTelaMenuPrincipal.setVisible(false);
-				
+				if(usuarioRecebido.getTipoUsuario().equals("ADM")) {
+					deletarJogador.deletarJogador(repositorioJogador.retornaListaJogadores(), frameTelaMenuPrincipal, repositorioJogador );
+					frameTelaMenuPrincipal.setVisible(false);
+				}else {
+					JOptionPane.showMessageDialog(null, "Somente Usuario ADM pode deletar");
+				}
 				break;
 			case "4": 
 				
